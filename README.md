@@ -7,3 +7,4 @@ protoc pb/hello_grpc.proto --php_out=php/client --grpc_out=php/client --plugin=p
 ##
 - https://github.com/protocolbuffers/protobuf/tree/main/php
 - https://github.com/grpc/grpc/tree/master/src/php
+- google.golang.org/grpc/examples/helloworld
