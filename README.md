@@ -6,7 +6,18 @@ protoc pb/hello_grpc.proto --php_out=php/client --grpc_out=php/client --plugin=p
 
 curl -X POST -k http://localhost:8090/v1/example/echo -d '{"name": " hello"}'
 ```
+```shell
+go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest
 
+go install github.com/fullstorydev/grpcui/cmd/grpcui@latest
+```
+###启动
+```shell
+#启动项目
+go run server/server.go
+#启动预览
+grpcui -plaintext  127.0.0.1:80880
+```
 ##
 - https://github.com/protocolbuffers/protobuf/tree/main/php
 - https://github.com/grpc/grpc/tree/master/src/php
